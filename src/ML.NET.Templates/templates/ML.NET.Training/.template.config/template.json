@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Alexander Slotte",
+    "classifications": [ "ML.NET", "Training" ],
+    "identity": "mlnet-training",
+    "name": "ML.NET Console App for Training",
+    "shortName": "mlnet-training",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    }
+  }
