@@ -1,5 +1,13 @@
+![mlops.neticon](https://img.shields.io/nuget/v/ML.NET.Templates.svg)
+
 ## ML.NET.Templates
 ML.NET.Templates is a collection of `dotnet new` templates for ML.NET.
+
+## How to use
+To install the `dotnet new` templates, run the following
+```
+dotnet new --install ML.NET.Templates::0.1.1-beta
+```
 
 ## Ideas
 Add `dotnet new` template for the following scenarios
