@@ -9,7 +9,7 @@ To install the `dotnet new` templates, run the following
 dotnet new --install ML.NET.Templates::0.1.1-beta
 ```
 
-To use a template you may run:
+To use e.g. the `mlnet-training` template
 ```
 dotnet new mlnet-training --mlnetVersion 1.5.1
 ```
