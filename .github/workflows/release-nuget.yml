@@ -1,0 +1,27 @@
+on:
+  release:
+    types: [published]
+
+name: Publish to nuget.org
+          
+jobs:
+  build:
+    name: Push packages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1        
+        with:
+          dotnet-version: 3.1.300        
+      - name: Install dependencies
+        run: dotnet restore src/ML.NET.Templates/ML.NET.Templates.csproj 
+      - name: Publish ML.NET.Templates
+        uses: brandedoutcast/publish-nuget@v2.5.2
+        with:
+          PROJECT_FILE_PATH: src/ML.NET.Templates/ML.NET.Templates.csproj 
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}} 
+          VERSION_STATIC: 1.0.0    
+          TAG_COMMIT: false    
