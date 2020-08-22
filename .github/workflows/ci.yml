@@ -29,7 +29,7 @@ jobs:
       env: 
         NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
     - name: Pack
-      run: dotnet pack src/ML.NET.Templates.csproj --configuration Release --no-build -o .
+      run: dotnet pack src/ML.NET.Templates/ML.NET.Templates.csproj --configuration Release --no-build -o .
     - name: Publish packages as artifact
       uses: actions/upload-artifact@v2
       with:
