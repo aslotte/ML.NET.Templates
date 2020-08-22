@@ -27,7 +27,9 @@ jobs:
         dotnet-version: 3.1.300
         source-url: https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
       env: 
-        NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
+        NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+    - name: Install dependencies
+      run: dotnet restore src/ML.NET.Templates/ML.NET.Templates.csproj      
     - name: Pack
       run: dotnet pack src/ML.NET.Templates/ML.NET.Templates.csproj --configuration Release --no-build -o .
     - name: Publish packages as artifact
