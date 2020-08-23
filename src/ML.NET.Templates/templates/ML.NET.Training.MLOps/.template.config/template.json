@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Alexander Slotte",
+    "classifications": [ "ML.NET", "MLOps.NET", "Training" ],
+    "identity": "mlnet-training-mlops",
+    "name": "ML.NET Console App for Training with MLOps.NET support",
+    "shortName": "mlnet-training-mlops",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    },
+    "symbols": {
+      "mlnetVersion": {
+          "type": "parameter",
+          "replaces": "{mlnetVersion}",
+          "defaultValue": "1.5.1"
+      },
+      "mlopsnetVersion": {
+        "type": "parameter",
+        "replaces": "{mlopsnetVersion}",
+        "defaultValue": "1.1.0"
+    },      
+      "skipRestore": {
+        "type": "parameter",
+        "defaultValue": "false"
+     }
+    },
+    "primaryOutputs": [
+      { "path": "ML.NET.Training.MLOps.csproj" }
+    ],
+    "defaultName": "ModelTrainer",
+    "postActions": [{
+      "condition": "(!skipRestore)",
+      "description": "Restore NuGet packages required by this project.",
+      "manualInstructions": [
+        { "text": "Run 'dotnet restore'" }
+      ],
+      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "continueOnError": true
+    }]
+  }
