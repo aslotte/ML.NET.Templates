@@ -9,12 +9,20 @@ To install the `dotnet new` templates, run the following
 dotnet new --install ML.NET.Templates::0.1.1-beta
 ```
 
-To use e.g. the `mlnet-training` template
+## Templates
+`mlnetVersion` is optional and defaults to 1.5.1
+
+### mlnet-training
+The template bootstraps a .NET Core console app that can be used to train a `ML.NET` model.
 ```
 dotnet new mlnet-training --mlnetVersion 1.5.1
 ```
 
-`mlnetVersion` is optional and defaults to 1.5.1
+### mlnet-web-embedded
+The template bootstraps an ASP.NET Core Web App with an embedded `ML.NET` model and Docker support
+```
+dotnet new mlnet-web-embedded --mlnetVersion 1.5.1
+```
 
 ## Ideas
 Add `dotnet new` template for the following scenarios
