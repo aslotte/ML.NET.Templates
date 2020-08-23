@@ -19,7 +19,7 @@ namespace ML.NET.Web.Embedded
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddPredictionEnginePool<ModelOutput, ModelOutput>().FromFile("model.zip");
+            services.AddPredictionEnginePool<ModelInput, ModelOutput>().FromFile("model.zip");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -34,10 +34,7 @@ namespace ML.NET.Web.Embedded
 
             app.UseEndpoints(endpoints =>
             {
-                app.UseEndpoints(endpoints =>
-                {
-                    endpoints.MapControllers();
-                });
+                endpoints.MapControllers();
             });
         }
     }

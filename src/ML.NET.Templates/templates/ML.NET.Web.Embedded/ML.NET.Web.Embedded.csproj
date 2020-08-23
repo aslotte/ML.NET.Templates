@@ -11,4 +11,10 @@
     <PackageReference Include="Microsoft.Extensions.ML" Version="{mlnetVersion}" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Update="model.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
