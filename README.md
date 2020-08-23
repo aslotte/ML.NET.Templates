@@ -6,7 +6,7 @@ ML.NET.Templates is a collection of `dotnet new` templates for ML.NET.
 ## How to use
 To install the `dotnet new` templates, run the following
 ```
-dotnet new --install ML.NET.Templates::0.2.0-beta
+dotnet new --install ML.NET.Templates::0.3.0-beta
 ```
 
 ## Templates
