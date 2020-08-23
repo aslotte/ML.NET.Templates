@@ -21,7 +21,7 @@ dotnet new mlnet-training --mlnetVersion 1.5.1
 ### mlnet-training-mlops
 The template bootstraps a .NET Core console app that can be used to train a `ML.NET` model. The template includes support for MLOps.NET to track your models performance and life-cycle. `mlopsnetVersion` is optional and defaults to 1.1.0
 ```
-dotnet new mlnet-training-mlops --mlnetVersion 1.5.1 --mlnetopsVersion 1.1.0
+dotnet new mlnet-training-mlops --mlnetVersion 1.5.1 --mlopsnetVersion 1.1.0
 ```
 
 ### mlnet-web-embedded
