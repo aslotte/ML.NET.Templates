@@ -27,10 +27,8 @@ dotnet new mlnet-web-embedded --mlnetVersion 1.5.1
 ## Ideas
 Add `dotnet new` template for the following scenarios
 
-- ML.NET Console App
 - ML.NET Console App with MLOps.NET support
 - ASP.NET Core with model accessed from URI
-- ASP.NET Core with Docker support
 - Azure Function with model accessed from URI
 - Custom scenarios, e.g. image classification, object detection, ONNX etc.
 
