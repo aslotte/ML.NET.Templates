@@ -2,6 +2,7 @@
 using Microsoft.ML.Data;
 using ML.NET.Training.Schema;
 using System;
+using System.Diagnostics;
 
 namespace ML.NET.Training
 {
@@ -14,6 +15,9 @@ namespace ML.NET.Training
 
         static void Main(string[] args)
         {
+            var stopWatch = new Stopwatch();
+            stopWatch.Start();
+
             var mlContext = new MLContext(seed: 1);
 
             Console.WriteLine($"Loading data from {DataPath}");
@@ -33,6 +37,9 @@ namespace ML.NET.Training
 
             Console.WriteLine("Evaluating the model's performance");
             //Depends on Trainer
+
+            stopWatch.Stop();
+            Console.WriteLine($"Training finished in: {stopWatch.ElapsedMilliseconds} milliseconds");
 
             Console.WriteLine($"Saving the model to {ModelName}");
             mlContext.Model.Save(model, trainTestSplit.TrainSet.Schema, ModelName);
