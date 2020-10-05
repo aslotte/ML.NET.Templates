@@ -21,6 +21,5 @@
     <Compile Remove="**\*" />
   </ItemGroup>
 
-  <ProjectExtensions><VisualStudio><UserProperties templates_4ml_1net_1web_1embedded_4_1template_1config_4template_1json__JsonSchema="https://jenkins-x.io/schemas/jx-requirements.json" /></VisualStudio></ProjectExtensions>
 
 </Project>
