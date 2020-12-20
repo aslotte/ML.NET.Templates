@@ -13,7 +13,7 @@
       "mlnetVersion": {
           "type": "parameter",
           "replaces": "{mlnetVersion}",
-          "defaultValue": "1.5.1"
+          "defaultValue": "1.5.4"
       },
       "skipRestore": {
         "type": "parameter",
