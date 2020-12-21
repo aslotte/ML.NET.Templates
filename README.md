@@ -6,28 +6,28 @@ ML.NET.Templates is a collection of `dotnet new` templates for ML.NET.
 ## How to use
 To install the `dotnet new` templates, run the following
 ```
-dotnet new --install ML.NET.Templates::0.3.0-beta
+dotnet new --install ML.NET.Templates::0.4.0-beta
 ```
 
 ## Templates
-`mlnetVersion` is optional and defaults to 1.5.1
+`mlnetVersion` is optional and defaults to 1.5.4
 
 ### mlnet-training
 The template bootstraps a .NET Core console app that can be used to train a `ML.NET` model.
 ```
-dotnet new mlnet-training --mlnetVersion 1.5.1
+dotnet new mlnet-training --mlnetVersion 1.5.4
 ```
 
 ### mlnet-training-mlops
-The template bootstraps a .NET Core console app that can be used to train a `ML.NET` model. The template includes support for MLOps.NET to track your models performance and life-cycle. `mlopsnetVersion` is optional and defaults to 1.1.0
+The template bootstraps a .NET Core console app that can be used to train a `ML.NET` model. The template includes support for MLOps.NET to track your models performance and life-cycle. `mlopsnetVersion` is optional and defaults to 1.3.0
 ```
-dotnet new mlnet-training-mlops --mlnetVersion 1.5.1 --mlopsnetVersion 1.1.0
+dotnet new mlnet-training-mlops --mlnetVersion 1.5.4 --mlopsnetVersion 1.3.0
 ```
 
 ### mlnet-web-embedded
 The template bootstraps an ASP.NET Core Web App with an embedded `ML.NET` model and Docker support
 ```
-dotnet new mlnet-web-embedded --mlnetVersion 1.5.1
+dotnet new mlnet-web-embedded --mlnetVersion 1.5.4
 ```
 
 ## Ideas
